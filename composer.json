@@ -19,7 +19,6 @@
     "symfony/dotenv": "^6.2"
   },
   "require-dev": {
-    "mockery/mockery": "^1.5",
     "phpunit/phpunit": "^10"
   },
   "config": {
@@ -44,7 +43,6 @@
   ],
   "scripts": {
     "test-no-coverage": [
-      "@test-prepare",
       "vendor/phpunit/phpunit/phpunit -c phpunit.xml"
     ]
   }
