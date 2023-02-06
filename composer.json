@@ -1,0 +1,51 @@
+{
+  "authors": [
+    {
+      "name": "Dmytro Kaleniuk",
+      "email": "dimaa.kaleniuk@gmail.com"
+    }
+  ],
+  "name": "kaleniuk/tax-calculator",
+  "description": "PHP tax calculator",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8.2",
+    "ext-http": "*",
+    "guzzlehttp/guzzle": "^7.5",
+    "symfony/console": "^6.2",
+    "symfony/dotenv": "^6.2"
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.5",
+    "phpunit/phpunit": "^10"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "bin": [
+    "bin/console"
+  ],
+  "scripts": {
+    "test-no-coverage": [
+      "@test-prepare",
+      "vendor/phpunit/phpunit/phpunit -c phpunit.xml"
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+vendor/
+.idea/
+
+/.env
+.env
+
+/bin/*
+!/bin/console
+
+composer.lock
+input.txt
+
+.phpunit.result.cache
