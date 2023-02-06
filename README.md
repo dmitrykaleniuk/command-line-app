@@ -16,15 +16,5 @@ Tax calculator for the transactions provided through the file (input.txt)
 {"bin":"45717360","amount":"100.55","currency":"EUR"}
 {"bin":"516793","amount":"50.00","currency":"USD"}
 
-# Troubleshooting
+# Tips
 Be sure that you have php 8.2 installed.
-
-If no, install brew: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-Add brew to the PATH
-
-test -d ~/.linuxbrew && eval "$(~/.linuxbrew/bin/brew shellenv)"
-test -d /home/linuxbrew/.linuxbrew && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-test -r ~/.bash_profile && echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.bash_profile
-echo "eval \"\$($(brew --prefix)/bin/brew shellenv)\"" >> ~/.profile
-
-Install php 8.2: brew link php@8.2 --force --overwrite
