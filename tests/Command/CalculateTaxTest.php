@@ -11,7 +11,7 @@ use Symfony\Component\Console\Tester\CommandTester;
 class CalculateTaxTest extends TestCase
 {
     private const FIXTURES_DIR         = __DIR__ . '/../fixtures/txt/%s';
-    private const VALID_FILE           = 'input.txt';
+    private const VALID_FILE           = 'valid_input.txt';
     private const INVALID_FILE         = 'invalid_input.txt';
     private const EXPECTED_TAX         = '0.46';
     private const EXCHANGE_RATE        = 1.076137;
